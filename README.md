@@ -1,5 +1,3 @@
-# pandoc-pdf package
+# Pandoc/PDF
 
-A short description of your package.
-
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Use Pandoc to create a PDF from an Atom editor pane, and view it in another pane.

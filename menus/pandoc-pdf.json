@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle pandoc-pdf",
+        "command": "pandoc-pdf:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "pandoc-pdf",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "pandoc-pdf:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
