@@ -1,12 +1,19 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
-// for a full listing of what's available.
-@import "ui-variables";
+@import 'ui-variables';
 
 .pandoc-pdf-view {
-  background-color:red;
+  position: absolute;
+  font-family: @font-family;
+  font-size: @font-size;
+  color: @text-color;
+  background-color: @tool-panel-background-color;
   width: 100%;
-  padding: 5px;
-  margin: 5px;
+  padding: @component-icon-padding;
+  border-bottom: 1px solid @tool-panel-border-color;
+  
+  .close-button {
+    color: @text-color-subtle;
+  }
+  .close-button:hover {
+    color: @text-color-highlight;
+  }
 }
