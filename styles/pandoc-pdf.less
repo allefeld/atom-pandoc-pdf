@@ -9,11 +9,72 @@
   width: 100%;
   padding: @component-icon-padding;
   border-bottom: 1px solid @tool-panel-border-color;
+  cursor: default;
   
   .close-button {
     color: @text-color-subtle;
+    float: right;
+    cursor: pointer;
   }
   .close-button:hover {
     color: @text-color-highlight;
+  }
+
+  .pandoc-pdf-dialog {
+    position: absolute;
+    top: 4em;
+    left: 15em;
+    z-index: 1;
+    background-color: @tool-panel-background-color;
+    padding: @component-padding;
+    border: 1px solid @tool-panel-border-color;
+    border-radius: @component-border-radius;
+    
+    .pandoc-pdf-log {
+      width: 80ch;
+      height: 40em;
+      max-width: 80vw;
+      max-height: 80vh;
+      overflow-y: scroll;
+      font-family: ~`atom.config.get('editor.fontFamily')`;
+      background-color: @inset-panel-background-color;
+      margin-top: @component-padding;
+      // cursor: text;
+      // user-select: text;
+
+      // wrapped lines indented by 2 characters
+      p {
+        padding-left: 2ch;
+        text-indent: -2ch;
+        margin: 0;
+        z-index: 2;
+        user-select: text;
+      }
+
+      .command {
+        color: @text-color-info;
+      }
+      .warning {
+        color: @text-color-warning;
+      }
+      .success {
+        color: @text-color-success;
+      }
+      .failure {
+        color: @text-color-error;
+      }
+      // Different styling for stdout vs stderr doesn't make sense,
+      // because Pandoc writes everything to stderr anyway.
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      // ::selection {
+      //   background-color: fade(@background-color-selected, 30%);
+      // }
+
+    }
   }
 }
