@@ -8,4 +8,5 @@ TODO
 
 -   disable/enable "Save PDF"
 
--   add "help" button that opens package documentation, Pandoc quick reference
+-   better "Help" text: package documentation, Pandoc quick reference
+    do not rely on markdown-preview or html-preview
