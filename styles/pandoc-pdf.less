@@ -1,4 +1,6 @@
 @import 'ui-variables';
+@import "octicon-mixins";
+
 
 .pandoc-pdf-view {
   position: absolute;
@@ -11,12 +13,33 @@
   border-bottom: 1px solid @tool-panel-border-color;
   cursor: default;
   
-  .close-button {
+  .pandoc-pdf-heading {
+    font-size: 1.2em;
+  }
+  
+  // create Pandoc icon
+  @pandoc: '⁋';
+  .icon-pandoc {
+    .octicon(pandoc);
+  }
+  
+  // fix vertical position of icons
+  .icon::before {
+    position: relative;
+    top: floor((16px - @font-size) / 2);
+  }
+  
+  .pandoc-pdf-spacer {
+    width: @component-line-height;
+    display: inline-block;
+  }
+  
+  .pandoc-pdf-close {
     color: @text-color-subtle;
     float: right;
     cursor: pointer;
   }
-  .close-button:hover {
+  .pandoc-pdf-close:hover {
     color: @text-color-highlight;
   }
 
@@ -70,7 +93,8 @@
         color: inherit;
         text-decoration: underline;
       }
-
+      
+      // Can't get stuff selectable anyway.
       // ::selection {
       //   background-color: fade(@background-color-selected, 30%);
       // }
