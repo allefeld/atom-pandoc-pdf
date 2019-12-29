@@ -55,15 +55,12 @@
     
     .pandoc-pdf-log {
       width: 80ch;
-      // height: 40em;
       max-width: 80vw;
       max-height: 80vh;
       overflow-y: scroll;
       font-family: ~`atom.config.get('editor.fontFamily')`;
       background-color: @inset-panel-background-color;
       margin-top: @component-padding;
-      // cursor: text;
-      // user-select: text;
 
       // wrapped lines indented by 2 characters
       p {
@@ -87,14 +84,16 @@
         color: @text-color-error;
       }
       // Different styling for stdout vs stderr doesn't make sense,
-      // because Pandoc writes everything to stderr anyway.
+      // because Pandoc writes everything to stderr.
 
       a {
         color: inherit;
         text-decoration: underline;
       }
       
-      // Can't get stuff selectable anyway.
+      // Can't get stuff selectable...
+      // cursor: text;
+      // user-select: text;
       // ::selection {
       //   background-color: fade(@background-color-selected, 30%);
       // }
