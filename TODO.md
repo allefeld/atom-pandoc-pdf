@@ -13,4 +13,4 @@ TODO
 
 -   fix menus
 
--   " → '
+-   make YAML editor pending
