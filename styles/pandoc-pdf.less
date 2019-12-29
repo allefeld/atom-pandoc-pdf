@@ -24,9 +24,9 @@
   }
   
   // create Pandoc icon
-  @pandoc: '⁋';
+  @pandocIcon: '⁋';
   .icon-pandoc {
-    .octicon(pandoc);
+    .octicon(pandocIcon);
   }
   
   // create icon made of four characters in a 2x2 grid
@@ -50,6 +50,19 @@
   }
   .pandoc-pdf-close:hover {
     color: @text-color-highlight;
+  }
+
+  .pandoc-warning,
+  .pandoc-warning.selected,
+  .pandoc-warning:hover,
+  .pandoc-warning.selected:hover {
+    color: @background-color-warning;
+  }
+  .pandoc-failure,
+  .pandoc-failure.selected,
+  .pandoc-failure:hover,
+  .pandoc-failure.selected:hover {
+    color: @background-color-error;
   }
 
   .pandoc-pdf-dialog {
@@ -91,9 +104,7 @@
       }
       .failure {
         color: @text-color-error;
-      }
-      // Different styling for stdout vs stderr doesn't make sense,
-      // because Pandoc writes everything to stderr.
+      }selected
 
       a {
         color: inherit;
