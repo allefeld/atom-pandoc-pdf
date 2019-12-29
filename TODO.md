@@ -12,5 +12,3 @@ TODO
 -   catch file being renamed / moved, then create new processor
 
 -   fix menus
-
--   make YAML editor pending

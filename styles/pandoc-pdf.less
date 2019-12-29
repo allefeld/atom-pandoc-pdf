@@ -17,16 +17,25 @@
     font-size: 1.2em;
   }
   
+  // fix vertical position of icons
+  .icon::before {
+    position: relative;
+    top: ceil((16px - @font-size) / 2);
+  }
+  
   // create Pandoc icon
   @pandoc: '⁋';
   .icon-pandoc {
     .octicon(pandoc);
   }
   
-  // fix vertical position of icons
-  .icon::before {
+  // create icon made of four characters in a 2x2 grid
+  .icon-2x2 {
+    display: inline-block;
+    line-height: 1;
+    font-size: 8px;
     position: relative;
-    top: floor((16px - @font-size) / 2);
+    top: ceil((16px - @font-size) / 2);
   }
   
   .pandoc-pdf-spacer {
