@@ -1,5 +1,7 @@
 TODO
 
+-   fix links
+
 -   use local paths in Pandoc arguments
 
 -   disable/enable "Save PDF"
