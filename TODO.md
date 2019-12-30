@@ -1,7 +1,5 @@
 TODO
 
--   log button appearance
-
 -   log: test / fix / extend links
 
 -   use local paths in Pandoc arguments

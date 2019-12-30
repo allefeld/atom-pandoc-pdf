@@ -29,6 +29,29 @@
     .octicon(pandocIcon);
   }
   
+  // create animatable log icon
+  .icon-log {
+    .octicon(three-bars);
+    &.animated::before {
+      animation-duration: 1s;
+      animation-name: bars;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(4);
+      // The intended 4 steps are 21%, 43%, 65%, and 87% clip from the bottom,
+      // but Electron's `steps` works weirdly, so it had to be hacked to have
+      // the intended effect: show 0, 1, 2, and 3 bars (from the top).
+    }
+  }
+  @keyframes bars {
+    from {
+      clip-path: inset(0 0 87% 0);
+    }
+    to {
+      clip-path: inset(0 0 -23% 0);
+    }
+  }
+  
+  
   // create icon made of four characters in a 2x2 grid
   .icon-2x2 {
     display: inline-block;
