@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle pandoc-pdf",
-        "command": "pandoc-pdf:toggle"
+        "label": "Open Pandoc/PDF View",
+        "command": "pandoc-pdf:open"
+      },
+      {
+        "label": "Close Pandoc/PDF View",
+        "command": "pandoc-pdf:close"
       }
     ]
   },
@@ -12,11 +16,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "pandoc-pdf",
+          "label": "Pandoc/PDF",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "pandoc-pdf:toggle"
+              "label": "Open Pandoc/PDF View",
+              "command": "pandoc-pdf:open"
+            },
+            {
+              "label": "Close Pandoc/PDF View",
+              "command": "pandoc-pdf:close"
             }
           ]
         }
