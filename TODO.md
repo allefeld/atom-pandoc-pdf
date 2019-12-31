@@ -1,6 +1,6 @@
 TODO
 
--   log: test / fix / extend links
+-   deterministic temporary directory
 
 -   better "Help" text: package documentation, Pandoc quick reference
 

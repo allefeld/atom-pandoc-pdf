@@ -80,19 +80,19 @@
   .pandoc-warning.selected,
   .pandoc-warning:hover,
   .pandoc-warning.selected:hover {
-    color: @background-color-warning;
+    color: @text-color-warning;
   }
   .pandoc-failure,
   .pandoc-failure.selected,
   .pandoc-failure:hover,
   .pandoc-failure.selected:hover {
-    color: @background-color-error;
+    color: @text-color-error;
   }
 
   .pandoc-pdf-dialog {
     position: absolute;
-    top: 4em;
-    left: 15em;
+    top: 150%;
+    left: ~'calc((100% - 500px) / 2)';  // center in editor
     z-index: 1;
     background-color: @tool-panel-background-color;
     padding: @component-padding;
@@ -100,11 +100,11 @@
     border-radius: @component-border-radius;
     
     .pandoc-pdf-log {
-      width: 80ch;
-      max-width: 80vw;
-      max-height: 80vh;
+      width: (500px - 2 * @component-padding);
+      max-height: 40em;
       overflow-y: scroll;
       font-family: ~`atom.config.get('editor.fontFamily')`;
+      white-space: pre-wrap;
       background-color: @inset-panel-background-color;
       margin-top: @component-padding;
 
@@ -119,16 +119,28 @@
 
       .command {
         color: @text-color-info;
+        padding-bottom: 1px;
+        border-bottom: 1px solid @tool-panel-background-color;
+        margin-bottom: 1px;
       }
       .warning {
         color: @text-color-warning;
       }
+      .error {
+        color: @text-color-error;
+      }
       .success {
         color: @text-color-success;
+        margin-top: 1px;
+        border-top: 1px solid @tool-panel-background-color;
+        padding-top: 1px;
       }
       .failure {
         color: @text-color-error;
-      }selected
+        margin-top: 1px;
+        border-top: 1px solid @tool-panel-background-color;
+        padding-top: 1px;
+      }
 
       a {
         color: inherit;
