@@ -9,12 +9,21 @@
   color: @text-color;
   background-color: @tool-panel-background-color;
   width: 100%;
-  padding: @component-icon-padding;
+  padding-left: @component-icon-padding;
+  padding-right: @component-icon-padding;
   border-bottom: 1px solid @tool-panel-border-color;
   cursor: default;
   
+  span {
+    margin-top: @component-icon-padding;
+    margin-bottom: @component-icon-padding;
+  }
+  
   .pandoc-pdf-heading {
     font-size: 1.2em;
+    float: left;
+    margin-top: (2 * @component-icon-padding);
+    margin-right: @component-padding;
   }
   
   // fix vertical position of icons
@@ -58,13 +67,6 @@
     display: inline-block;
     line-height: 1;
     font-size: 8px;
-    position: relative;
-    top: ceil((16px - @font-size) / 2);
-  }
-  
-  .pandoc-pdf-spacer {
-    width: @component-padding;
-    display: inline-block;
   }
   
   .pandoc-pdf-close {
