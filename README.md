@@ -22,12 +22,12 @@ At least one PDF engine needs to be installed:
 -   [wkhtmltopdf](https://wkhtmltopdf.org/), [WeasyPrint](https://weasyprint.org/), or [Prince](https://www.princexml.com/)
 -   pdfroff (from [GNU troff](https://www.gnu.org/software/groff/))
 
-If you choose LaTeX, see the [Pandoc documentation](https://pandoc.org/MANUAL.html#creating-a-pdf) for a list of the LaTeX packages used by the default template.
+If you choose Latexmk, see the [Pandoc documentation](https://pandoc.org/MANUAL.html#creating-a-pdf) for a list of the LaTeX packages used by the default template.
 
 To view the generated PDF within Atom, the [PDF View package](https://atom.io/packages/pdf-view) has to be installed.
 
 
-# Toolbar buttons
+## Toolbar buttons
 
 The toolbar contains the following buttons:
 
@@ -73,6 +73,49 @@ Opens the Pandoc/PDF package settings dialog.
 
 <dd>
 Shows reference text.
+</dd>
+
+</dl>
+
+
+## Settings
+
+<dl>
+
+<dt>Process on Save</dt>
+
+<dd>
+Whether the document should be processed into PDF every time it is saved.<br>
+Disable if processing takes very long or you save the file very often, and use the keyboard shortcut instead.
+</dd>
+
+<dt>Pandoc PDF Engine</dt>
+
+<dd>
+The program(s) used by Pandoc to create the PDF.<br>
+This setting implies the intermediate output format – and thereby the default template – used by Pandoc: <code>latex</code> for Latexmk, <code>context</code> for ConTeXt, <code>html</code> for wkhtmltopdf, WeasyPrint, and Prince, and <code>ms</code> for pdfroff.
+</dd>
+
+<dt>Write beamer</dt>
+
+<dd>
+Use the output format <code>beamer</code> instead of <code>latex</code> if the file's pathname matches this JavaScript regular expression.<br>
+Pandoc supports the generation of presentation slides via the LaTeX package beamer through a special output format, but it is not implied by any of the PDF engine settings. As a workaround, this setting allows to select <code>beamer</code> based on the pathname.
+</dd>
+
+<dt>Pandoc Template</dt>
+
+<dd>
+The name of the <a href="https://pandoc.org/MANUAL.html#templates">template file</a> used by Pandoc to produce the intermediate document that is then processed by the PDF engine.<br>
+If not set, Pandoc's default template for the intermediate output format is used. If set, it should be made specific to the intermediate output format by using the variable <code>${writer}</code>.
+</dd>
+
+<dt>Pandoc Defaults</dt>
+
+<dd>
+The name of a <a href="https://pandoc.org/MANUAL.html#default-files">defaults file</a> containing additional Pandoc options in YAML format.<br>
+If set, it should be made specific to the intermediate output format by using the variable <code>${writer}</code>.<br>
+Pandoc supports defaults files since version 2.8, and the interplay of a general defaults file specified here and a local defaults file (see above) only works properly since version 2.9.1.
 </dd>
 
 </dl>
