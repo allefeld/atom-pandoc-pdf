@@ -1,20 +1,6 @@
 ---
 title: Pandoc/PDF reference
-...
-
-TODO:
-
--   template variables for latex/beamer/html/ms
-
--   defaults file settings
-
--   Pandoc's Markdown
-
--   more compact format
-
--   explain package settings
-
-
+---
 
 
 # Defaults files

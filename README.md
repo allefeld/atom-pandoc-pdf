@@ -1,30 +1,34 @@
 # Pandoc/PDF
 
-Pandoc/PDF is a package for the [Atom editor](https://atom.io/) that makes it easy to use the *universal document converter* [Pandoc](https://pandoc.org/) directly from an editor pane to create a PDF, and to view that PDF in another Atom pane.
+Pandoc/PDF is a package for the [Atom editor](https://atom.io/) that makes it easy to use [Pandoc](https://pandoc.org/) directly from an editor pane to create a PDF, and to view that PDF in another Atom pane.
+
+It is __not a preview__ package, because what you see is the final, high-quality PDF output.
 
 ![](pandoc-pdf.apng)
 
-Activated by keyboard shortcut (default `Alt-P`) or menu item, Pandoc/PDF inserts a toolbar into the active editor, processes the document with Pandoc, and shows the resulting PDF. By default, the document is reprocessed every time it is saved, but that can be deactivated and reprocessing triggered with the shortcut or a toolbar button.
+Activated by keyboard shortcut (default `Alt-P`) or menu item, Pandoc/PDF inserts a toolbar into the active editor, processes the document with Pandoc, and shows the resulting PDF. By default, the document is reprocessed every time it is saved, but that can be deactivated and reprocessing triggered instead with the keyboard shortcut or a toolbar button.
 
-Pandoc/PDF supports all text-based input formats that can be autodetected by Pandoc, including Pandoc's Markdown, reStructuredText, Textile, MediaWiki & DokuWiki markup, and DocBook. It supports PDF generation via Pandoc's `latex`, `beamer`, `context`, `html`, and `ms` output formats.
+Pandoc/PDF supports all text-based input formats that can be autodetected by Pandoc (see below), including Pandoc's Markdown, reStructuredText, Textile, MediaWiki & DokuWiki markup, and DocBook. It supports PDF generation via Pandoc's `latex`, `beamer`, `context`, `html`, and `ms` output formats.
 
 
 ## Installation and prerequisites
 
 Install from Atom's Settings/Install dialog (search for `pandoc-pdf`) or via `apm install pandoc-pdf`.
 
-Pandoc needs to be installed and on the path. For full functionality, version 2.9.1 or later is recommended.
+Pandoc needs to be installed and on the path. For full functionality, version 2.9.1 or later is necessary.
 
 At least one PDF engine needs to be installed:
 
--   Latexmk and pdfLaTeX, XeLaTeX, or LuaLaTeX (e.g. from [TeX Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/about))
--   ConTeXt and pdfTeX, XeTeX, or LuaTeX (e.g. from [TeX Live](https://www.tug.org/texlive/))
+-   Latexmk with pdfLaTeX, XeLaTeX, or LuaLaTeX (e.g. from [TeX Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/about))
+-   ConTeXt with pdfTeX, XeTeX, or LuaTeX (e.g. from [TeX Live](https://www.tug.org/texlive/))
 -   [wkhtmltopdf](https://wkhtmltopdf.org/), [WeasyPrint](https://weasyprint.org/), or [Prince](https://www.princexml.com/)
 -   pdfroff (from [GNU troff](https://www.gnu.org/software/groff/))
 
-If you choose Latexmk, see the [Pandoc documentation](https://pandoc.org/MANUAL.html#creating-a-pdf) for a list of the LaTeX packages used by the default template.
+If you choose Latexmk, see the Pandoc documentation for a [list of the LaTeX packages](https://pandoc.org/MANUAL.html#creating-a-pdf) needed by the default template.
 
-To view the generated PDF within Atom, the [PDF View package](https://atom.io/packages/pdf-view) has to be installed.
+To view the generated PDF within Atom, the [pdf-view package](https://atom.io/packages/pdf-view) needs to be installed.
+
+If the input format is Pandoc's Markdown, using the [language-markdown package](https://atom.io/packages/language-markdown) with a supported syntax theme is recommended for editing, but this does not affect the functionality of Pandoc/PDF.
 
 
 ## Toolbar buttons
