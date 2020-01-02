@@ -15,31 +15,6 @@ TODO:
 -   explain package settings
 
 
-# Input formats
-
-The text-based input formats which Pandoc recognizes based on the file extension are:
-
-
-| reader              | format                       | file extension(s)               |
-|---------------------|------------------------------|---------------------------------|
-| `docbook`           | DocBook                      | `db`                            |
-| `dokuwiki`          | DokuWiki markup              | `dokuwiki`                      |
-| `fb2`               | FictionBook2 e-book          | `fb2`                           |
-| `html`              | HTML                         | `htm`, `html`, `xhtml`          |
-| `ipynb`             | Jupyter notebook             | `ipynb`                         |
-| `json`              | JSON version of native AST   | `json`                          |
-| `latex`             | LaTeX                        | `latex`, `ltx`, `tex`           |
-| `markdown`          | Pandoc's Markdown            | `markdown`, `md`, `text`, `txt` |
-| `markdown+lhs`      | Literate Haskell             | `lhs`                           |
-| `mediawiki`         | MediaWiki markup             | `wiki`                          |
-| `man`               | roff man                     | `1` – `9`                       |
-| `muse`              | Muse                         | `muse`                          |
-| `native`            | native Haskell               | `native`                        |
-| `opml`              | OPML                         | `opml`                          |
-| `org`               | Emacs Org mode               | `org`                           |
-| `rst`               | reStructuredText             | `rst`                           |
-| `t2t`               | txt2tags                     | `t2t`                           |
-| `textile`           | Textile                      | `textile`                       |
 
 
 # Defaults files
