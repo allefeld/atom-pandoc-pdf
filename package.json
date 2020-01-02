@@ -3,7 +3,7 @@
   "main": "./lib/pandoc-pdf",
   "version": "0.0.0",
   "description": "Use Pandoc to create a PDF from an Atom editor pane, and view it in another pane.",
-  "keywords": [],
+  "keywords": ["Pandoc", "PDF", "Markdown"],
   "activationCommands": {
     "atom-workspace": "pandoc-pdf:open"
   },

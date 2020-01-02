@@ -33,9 +33,14 @@
   }
   
   // create Pandoc icon
-  @pandocIcon: '⁋';
+  @pilcrow: '¶';
   .icon-pandoc {
-    .octicon(pandocIcon);
+    .octicon(pilcrow);  // for the layout
+    &::before {
+      // override 'Octicons Regular'; hoping this font contains a pilcrow
+      font-family: sans-serif;
+    }
+    transform: scaleX(-1);
   }
   
   // create animatable log icon
@@ -46,9 +51,10 @@
       animation-name: bars;
       animation-iteration-count: infinite;
       animation-timing-function: steps(4);
-      // The intended 4 steps are 21%, 43%, 65%, and 87% clip from the bottom,
-      // but Electron's `steps` works weirdly, so it had to be hacked to have
-      // the intended effect: show 0, 1, 2, and 3 bars (from the top).
+      // The intended 4 steps are 87%, 65%, 43%, and 21% clip from the bottom,
+      // corresponding to 0, 1, 2, and 3 bars (from the top) to be visible.
+      // But Electron's `steps` works weirdly, so it had to be hacked to have
+      // the intended effect.
     }
   }
   @keyframes bars {
@@ -58,15 +64,6 @@
     to {
       clip-path: inset(0 0 -23% 0);
     }
-  }
-  
-  
-  // create icon made of four characters in a 2x2 grid
-  // for YAML icon, because there wasn't anything decent
-  .icon-2x2 {
-    display: inline-block;
-    line-height: 1;
-    font-size: 8px;
   }
   
   .pandoc-pdf-close {
