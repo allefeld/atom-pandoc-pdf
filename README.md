@@ -1,6 +1,6 @@
 # Pandoc/PDF
 
-Pandoc/PDF is a package for the [Atom editor](https://atom.io/) that makes it easy to use [Pandoc](https://pandoc.org/) directly from an editor pane to create a PDF, and to view that PDF in another Atom pane.
+Pandoc/PDF is a package for the [Atom editor](https://atom.io/) that makes it possible to use [Pandoc](https://pandoc.org/) directly from an editor pane to create a PDF, and to view that PDF in another Atom pane.
 
 It is __not a preview__ package, because what you see is the final, high-quality PDF output.
 
@@ -37,7 +37,7 @@ The toolbar contains the following buttons:
 
 <dl>
 
-<dt><span style="transform: scaleX(-1)">¶</span> &nbsp; Process with Pandoc into PDF</dt>
+<dt><img src="doc/reversed-pilcrow.svg"/> &nbsp; Process with Pandoc into PDF</dt>
 
 <dd>
 Triggers reprocessing with Pandoc. Processing occurs in the background, and Pandoc’s log messages are shown in the “Log Messages” dialog.

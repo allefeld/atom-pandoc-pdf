@@ -6,4 +6,4 @@ TODO
     -   useful defaults file settings
     -   more compact format
 
--   canonical version of Pandoc icon
+-   canonical Pandoc icon?
