@@ -4,7 +4,7 @@ Pandoc/PDF is a package for the [Atom editor](https://atom.io/) that makes it po
 
 It is __not a preview__ package, because what you see is the final, high-quality PDF output.
 
-![](pandoc-pdf.apng)
+![](pandoc-pdf.gif)
 
 Activated by keyboard shortcut (default `Alt-P`) or menu item, Pandoc/PDF inserts a toolbar into the active editor, processes the document with Pandoc, and shows the resulting PDF. By default, the document is reprocessed every time it is saved, but that can be deactivated and reprocessing triggered instead with the keyboard shortcut or a toolbar button.
 

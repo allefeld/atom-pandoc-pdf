@@ -1,9 +1,13 @@
----
-title: Pandoc/PDF reference
----
+# Pandoc/PDF reference
+
+*work in progress*
 
 
-# Defaults files
+<!-- Useful for debugging latex:
+header-includes: \synctex=1 -->
+
+
+## Defaults files
 
 Pandoc supports defaults files from version 2.8. A defaults file is in YAML format, and its fields correspond to command line options. A `--defaults` command line option is treated as if the contained options were given in its place on the command line. Note that if an option is specified multiple times, options given later on the command line override those given earlier, except for repeatable options (`--metadata-file`, `--css`, `--include-in-header`, `--include-before-body`, `--include-after-body`, `--variable`, `--metadata`, `--syntax-definition`), where values are combined.   
 
@@ -74,7 +78,3 @@ The command line options likely to be relevant for use with PP, and their transl
 |                                               | `  citation-abbreviations:` FILE                 |
 
 If possible, the last four options are better implemented as entries in the source files' YAML metadata block.
-
-
-
-[hey](www.google.com)

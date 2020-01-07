@@ -1,7 +1,5 @@
 # todo
 
--   new animation graphics with pdfjs-viewer
-
 -   Pandoc/PDF reference
     -   Pandoc's Markdown
     -   metadata and template variables for latex/beamer/html/ms
