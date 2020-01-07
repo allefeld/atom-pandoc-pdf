@@ -26,7 +26,7 @@ At least one PDF engine needs to be installed:
 
 If you choose Latexmk, see the Pandoc documentation for a [list of the LaTeX packages](https://pandoc.org/MANUAL.html#creating-a-pdf) needed by the default template.
 
-To view the generated PDF within Atom, the [pdf-view package](https://atom.io/packages/pdf-view) needs to be installed.
+To view the generated PDF within Atom, the [pdfjs-viewer](https://atom.io/packages/pdfjs-viewer) package is recommended, but [pdf-view-plus](https://atom.io/packages/pdf-view-plus) or [pdf-view](https://atom.io/packages/pdf-view) can be used, too.
 
 If the input format is Pandoc's Markdown, using the [language-markdown package](https://atom.io/packages/language-markdown) with a supported syntax theme is recommended for editing, but this does not affect the functionality of Pandoc/PDF.
 

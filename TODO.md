@@ -1,6 +1,6 @@
-todo
+# todo
 
--   de/serialize
+-   new animation graphics with pdfjs-viewer
 
 -   Pandoc/PDF reference
     -   Pandoc's Markdown
@@ -8,7 +8,13 @@ todo
     -   useful defaults file settings
     -   more compact format
 
--   canonical Pandoc icon??
+-   de/serialize
+
+-   enable links to error in LaTeX source
+
+-   canonical Pandoc icon, if and when jgm decides
+
+***
 
 -   The temporary directory is deleted if PP is closed because PandocPdfView.destroy() calls PandocPdfProcessor.destroy().
     The same does not happen if Atom is exited or reloaded, probably because Atom does not destroy objects.
