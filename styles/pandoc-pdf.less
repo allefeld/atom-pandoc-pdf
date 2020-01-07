@@ -15,14 +15,17 @@
   cursor: default;
   
   span {
-    margin-top: @component-icon-padding;
-    margin-bottom: @component-icon-padding;
+    margin-top: @component-icon-padding - 2px;
+    margin-bottom: @component-icon-padding - 3px;
   }
   
   .pandoc-pdf-heading {
-    font-size: 1.2em;
+    font-size: (1.2 * @font-size);
+    color: @text-color-highlight;
     float: left;
-    margin-top: (2 * @component-icon-padding);
+    height: @component-line-height;
+    display: inline-block;
+    padding-top: (((@component-line-height - 1.2 * @font-size)) / 2);
     margin-right: @component-padding;
   }
   
