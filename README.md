@@ -127,7 +127,7 @@ Pandoc supports defaults files since version 2.8, and the interplay of a general
 
 ## Input formats
 
-The text-based input formats which Pandoc recognizes based on the file extension are:
+The text-based input formats which Pandoc [recognizes](https://github.com/jgm/pandoc/blob/master/src/Text/Pandoc/App/FormatHeuristics.hs#L33) based on the file extension are:
 
 
 | reader              | format                       | file extension(s)               |

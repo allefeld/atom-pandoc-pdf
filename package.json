@@ -4,9 +4,6 @@
   "version": "0.0.0",
   "description": "Use Pandoc to create a PDF from an Atom editor pane, and view it in another pane.",
   "keywords": ["Pandoc", "PDF", "Markdown"],
-  "activationCommands": {
-    "atom-workspace": "pandoc-pdf:open"
-  },
   "repository": "https://github.com/allefeld/atom-pandoc-pdf",
   "license": "MIT",
   "engines": {
