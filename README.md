@@ -31,6 +31,11 @@ To view the generated PDF within Atom, the [pdfjs-viewer](https://atom.io/packag
 If the input format is Pandoc's Markdown, using the [language-markdown](https://atom.io/packages/language-markdown) package with a supported syntax theme is recommended for writing, but this does not affect the functionality of Pandoc/PDF.
 
 
+## Settings
+
+Pandoc/PDF has settings to choose the PDF engine, Pandoc template and defaults file, and configure input file extensions. For a detailed explanation, see the settings dialog after installation.
+
+
 ## Toolbar buttons
 
 The toolbar contains the following buttons:
@@ -81,95 +86,6 @@ Shows reference text.
 
 </dl>
 
-
-## Settings
-
-##### Process on Save
-
-Whether the document should be processed into PDF every time it is saved.
-
-Disable if processing takes very long or you save the file very often, and use the keyboard shortcut instead.
-
-##### Pandoc PDF Engine
-
-The program(s) used by Pandoc to create the PDF.
-
-This setting implies the intermediate output format, and thereby the default template, used by Pandoc: `latex` for Latexmk, `context` for ConTeXt, `html` for wkhtmltopdf, WeasyPrint, and Prince, and `ms` for pdfroff.
-
-##### Pandoc Template
-
-The name of the [template file](https://pandoc.org/MANUAL.html#templates) used by Pandoc to produce the intermediate document that is then processed by the PDF engine.
-
-If not set, Pandoc's default template for the intermediate output format is used. If set, it should be made specific to the intermediate output format by using the variable `${writer}`.
-
-##### Pandoc Defaults
-
-The name of a [defaults file](https://pandoc.org/MANUAL.html#default-files) containing additional Pandoc options in YAML format.
-
-If set, it should be made specific to the intermediate output format by using the variable `${writer}`.
-
-Pandoc supports defaults files since version 2.8, and the interplay of a general defaults file specified here and a local defaults file (see above) only works properly since version 2.9.1.
-
-##### Write beamer
-
-Use the intermediate output format `beamer` instead of `latex` if the file's pathname matches this JavaScript regular expression.
-
-Pandoc supports the generation of presentation slides via the LaTeX package beamer through a special output format, but it is not implied by any of the PDF engine settings. As a workaround, this setting allows to select `beamer` based on the pathname.
-
-##### Pandoc Input Formats
-
-Configure which input file extensions should be associated with which of Pandoc's input file formats, extending Pandoc's autodetection (see below).
-
-*Configured File Extensions:* a comma-separated list of the extensions for which an input format should be configured. Extension can include `.`s. After Atom is restarted, for each of them an additional settings field appears below.
-
-*Input Format for .ext:* A Pandoc input format specification incl. format extensions.
-
-##### Path to Pandoc binary
-
-If Pandoc is not found automatically, its pathname can be specified here.
-
-
-## Input formats
-
-The text-based input formats which Pandoc [detects](https://github.com/jgm/pandoc/blob/master/src/Text/Pandoc/App/FormatHeuristics.hs#L33) based on the file extension are:
-
-
-| reader              | format                       | file extension(s)               |
-|---------------------|------------------------------|---------------------------------|
-| `docbook`           | DocBook                      | `db`                            |
-| `dokuwiki`          | DokuWiki markup              | `dokuwiki`                      |
-| `fb2`               | FictionBook2 e-book          | `fb2`                           |
-| `html`              | HTML                         | `htm`, `html`, `xhtml`          |
-| `ipynb`             | Jupyter notebook             | `ipynb`                         |
-| `json`              | JSON version of native AST   | `json`                          |
-| `latex`             | LaTeX                        | `latex`, `ltx`, `tex`           |
-| `markdown`          | Pandoc's Markdown            | `markdown`, `md`, `text`, `txt` |
-| `markdown+lhs`      | Literate Haskell             | `lhs`                           |
-| `mediawiki`         | MediaWiki markup             | `wiki`                          |
-| `man`               | roff man                     | `1` – `9`                       |
-| `muse`              | Muse                         | `muse`                          |
-| `native`            | native Haskell               | `native`                        |
-| `opml`              | OPML                         | `opml`                          |
-| `org`               | Emacs Org mode               | `org`                           |
-| `rst`               | reStructuredText             | `rst`                           |
-| `t2t`               | txt2tags                     | `t2t`                           |
-| `textile`           | Textile                      | `textile`                       |
-
-The text-based input formats which Pandoc does not automatically detect are:
-
-| reader              | format                       |
-|---------------------|------------------------------|
-| `commonmark`        | CommonMark Markdown          |
-| `creole`            | Creole 1.0                   |
-| `gfm`               | GitHub-Flavored Markdown     |
-| `haddock`           | Haddock markup               |
-| `jats`              | JATS XML                     |
-| `markdown_mmd`      | MultiMarkdown                |
-| `markdown_phpextra` | PHP Markdown Extra           |
-| `markdown_strict`   | original unextended Markdown |
-| `tikiwiki`          | TikiWiki markup              |
-| `twiki`             | TWiki markup                 |
-| `vimwiki`           | Vimwiki                      |
 
 ---
 

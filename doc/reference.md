@@ -78,3 +78,46 @@ The command line options likely to be relevant for use with PP, and their transl
 |                                               | `  citation-abbreviations:` FILE                 |
 
 If possible, the last four options are better implemented as entries in the source files' YAML metadata block.
+
+
+## Input formats
+
+The text-based input formats which Pandoc [detects](https://github.com/jgm/pandoc/blob/master/src/Text/Pandoc/App/FormatHeuristics.hs#L33) based on the file extension are:
+
+
+| reader              | format                       | file extension(s)               |
+|---------------------|------------------------------|---------------------------------|
+| `docbook`           | DocBook                      | `db`                            |
+| `dokuwiki`          | DokuWiki markup              | `dokuwiki`                      |
+| `fb2`               | FictionBook2 e-book          | `fb2`                           |
+| `html`              | HTML                         | `htm`, `html`, `xhtml`          |
+| `ipynb`             | Jupyter notebook             | `ipynb`                         |
+| `json`              | JSON version of native AST   | `json`                          |
+| `latex`             | LaTeX                        | `latex`, `ltx`, `tex`           |
+| `markdown`          | Pandoc's Markdown            | `markdown`, `md`, `text`, `txt` |
+| `markdown+lhs`      | Literate Haskell             | `lhs`                           |
+| `mediawiki`         | MediaWiki markup             | `wiki`                          |
+| `man`               | roff man                     | `1` – `9`                       |
+| `muse`              | Muse                         | `muse`                          |
+| `native`            | native Haskell               | `native`                        |
+| `opml`              | OPML                         | `opml`                          |
+| `org`               | Emacs Org mode               | `org`                           |
+| `rst`               | reStructuredText             | `rst`                           |
+| `t2t`               | txt2tags                     | `t2t`                           |
+| `textile`           | Textile                      | `textile`                       |
+
+The text-based input formats which Pandoc does not automatically detect are:
+
+| reader              | format                       |
+|---------------------|------------------------------|
+| `commonmark`        | CommonMark Markdown          |
+| `creole`            | Creole 1.0                   |
+| `gfm`               | GitHub-Flavored Markdown     |
+| `haddock`           | Haddock markup               |
+| `jats`              | JATS XML                     |
+| `markdown_mmd`      | MultiMarkdown                |
+| `markdown_phpextra` | PHP Markdown Extra           |
+| `markdown_strict`   | original unextended Markdown |
+| `tikiwiki`          | TikiWiki markup              |
+| `twiki`             | TWiki markup                 |
+| `vimwiki`           | Vimwiki                      |
