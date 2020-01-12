@@ -1,12 +1,5 @@
 # todo
 
--   show selected format in toolbar
-
--   button within log to copy Pandoc command  
-    better to ernable text selection?  
-    mayb the selection problem is not css, but js mouse-event related?
-
-
 -   make "write beamer" extension-based, too (no regex)
 
 -   Pandoc/PDF reference
@@ -22,6 +15,8 @@
 
 ***
 
+-   show selected format in toolbar
+
 -   de/serialize?
 
     don't know how:
@@ -35,3 +30,8 @@
 -   canonical Pandoc icon, if and when jgm decides
 
 <https://pandoc.org/MANUAL.html>
+
+
+# wut {#todo}
+
+# wut {#todo}

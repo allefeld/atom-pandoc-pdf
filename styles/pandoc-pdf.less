@@ -13,12 +13,12 @@
   padding-right: @component-icon-padding;
   border-bottom: 1px solid @tool-panel-border-color;
   cursor: default;
-  
+
   span {
     margin-top: @component-icon-padding - 2px;
     margin-bottom: @component-icon-padding - 3px;
   }
-  
+
   .pandoc-pdf-heading {
     font-size: (1.2 * @font-size);
     color: @text-color-highlight;
@@ -28,13 +28,13 @@
     padding-top: (((@component-line-height - 1.2 * @font-size)) / 2);
     margin-right: @component-padding;
   }
-  
+
   // fix vertical position of icons
   .icon::before {
     position: relative;
     top: ceil((16px - @font-size) / 2);
   }
-  
+
   // create Pandoc icon
   @pilcrow: '¶';
   .icon-pandoc {
@@ -45,7 +45,7 @@
     }
     transform: scaleX(-1);
   }
-  
+
   // create animatable log icon
   .icon-log {
     .octicon(three-bars);
@@ -68,7 +68,7 @@
       clip-path: inset(0 0 -23% 0);
     }
   }
-  
+
   .pandoc-pdf-close {
     color: @text-color-subtle;
     float: right;
@@ -100,7 +100,7 @@
     padding: @component-padding;
     border: 1px solid @tool-panel-border-color;
     border-radius: @component-border-radius;
-    
+
     .pandoc-pdf-log {
       width: (500px - 2 * @component-padding);
       max-height: 40em;
@@ -116,7 +116,10 @@
         text-indent: -2ch;
         margin: 0;
         z-index: 2;
-        user-select: text;
+
+        &:hover {
+          cursor: copy;
+        }
       }
 
       .command {
@@ -148,13 +151,6 @@
         color: inherit;
         text-decoration: underline;
       }
-      
-      // Can't get stuff selectable...
-      // cursor: text;
-      // user-select: text;
-      // ::selection {
-      //   background-color: fade(@background-color-selected, 30%);
-      // }
 
     }
   }
