@@ -1,17 +1,10 @@
 # todo
 
--   make "write beamer" extension-based, too (no regex)
-
 -   Pandoc/PDF reference
     -   Pandoc's Markdown
     -   metadata and template variables for latex/beamer/html/ms
     -   useful defaults file settings
     -   more compact format
-
--   destroyed if editor is closed? no  
-    → listen to editor close
-
--   delete everything but pdf on destroy()?
 
 ***
 
@@ -28,10 +21,3 @@
     -   or hook into observeTextEditors or observeActiveTextEditor?
 
 -   canonical Pandoc icon, if and when jgm decides
-
-<https://pandoc.org/MANUAL.html>
-
-
-# wut {#todo}
-
-# wut {#todo}
