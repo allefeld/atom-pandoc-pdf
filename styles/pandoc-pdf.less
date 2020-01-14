@@ -94,7 +94,7 @@
   .pandoc-pdf-dialog {
     position: absolute;
     top: 150%;
-    left: ~'calc((100% - 500px) / 2)';  // center in editor
+    left: ~'calc((100% - 600px) / 2)';  // center in editor
     z-index: 1;
     background-color: @tool-panel-background-color;
     padding: @component-padding;
@@ -102,7 +102,7 @@
     border-radius: @component-border-radius;
 
     .pandoc-pdf-log {
-      width: (500px - 2 * @component-padding);
+      width: (600px - 2 * @component-padding);
       max-height: 40em;
       overflow-y: scroll;
       font-family: ~`atom.config.get('editor.fontFamily')`;
@@ -117,8 +117,8 @@
         margin: 0;
         z-index: 2;
 
-        &:hover {
-          cursor: copy;
+        &.selected {
+          background-color: @background-color-selected;
         }
       }
 
