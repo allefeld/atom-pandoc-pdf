@@ -2,12 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Open Pandoc/PDF View",
-        "command": "pandoc-pdf:open"
+        "label": "Add Pandoc/PDF Toolbar and Process",
+        "command": "pandoc-pdf:process"
       },
       {
-        "label": "Close Pandoc/PDF View",
-        "command": "pandoc-pdf:close"
+        "label": "Remove Pandoc/PDF Toolbar",
+        "command": "pandoc-pdf:remove"
       }
     ]
   },
@@ -19,12 +19,12 @@
           "label": "Pandoc/PDF",
           "submenu": [
             {
-              "label": "Open Pandoc/PDF View",
-              "command": "pandoc-pdf:open"
+              "label": "Add Pandoc/PDF Toolbar and Process",
+              "command": "pandoc-pdf:process"
             },
             {
-              "label": "Close Pandoc/PDF View",
-              "command": "pandoc-pdf:close"
+              "label": "Remove Pandoc/PDF Toolbar",
+              "command": "pandoc-pdf:remove"
             }
           ]
         }
