@@ -42,7 +42,7 @@ The toolbar contains the following buttons:
 
 ##### ![](img/reversed-pilcrow.svg)   Process with Pandoc into PDF
 
-Triggers reprocessing with Pandoc. Processing occurs in the background, and Pandoc's log messages are shown in the "Log Messages" dialog.
+Triggers reprocessing with Pandoc. Processing occurs in the background, and Pandoc's log messages are shown in the "Pandoc log messages" dialog.
 
 ##### ![](img/three-bars.svg)   Toggle Pandoc log messages
 
