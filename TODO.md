@@ -2,9 +2,14 @@
 
 -   Pandoc/PDF reference
     -   metadata and template variables for latex/beamer/html/ms
-    -   useful defaults file settings
+    -   slide shows
+    -   or scrap it all for link to offical users's guide?
+
+-   Pandoc contribution: insert reference to defaults file settings into MANUAL.txt
 
 ***
+
+-   links between pdfs?
 
 -   show selected format in toolbar?
 
@@ -13,9 +18,7 @@
     don't know how:
 
     -   there would have to be a way to get an ID from an editor and an editor from an ID (URI is buffer- not editor-specific)
-
     -   it would have to be ensured on deserialization of a PandocPdfView object that the corresponding editor has already been deserialized.
-
     -   or hook into observeTextEditors or observeActiveTextEditor?
 
 -   canonical Pandoc icon, if and when jgm decides
