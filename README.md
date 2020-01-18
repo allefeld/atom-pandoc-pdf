@@ -66,9 +66,9 @@ Opens the temporary directory in the system file browser.
 
 Opens the Pandoc/PDF package settings dialog.
 
-##### ![](img/question.svg)   Show Pandoc/PDF reference
+##### ![](img/question.svg)   Show Pandoc User's Guide
 
-Shows reference text.
+Opens <https://pandoc.org/MANUAL.pdf> within Atom for quick reference. Note that only a subset of Pandoc's capabilities can be accessed though Pandoc/PDF.
 
 ---
 

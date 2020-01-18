@@ -1,10 +1,5 @@
 # todo
 
--   Pandoc/PDF reference
-    -   metadata and template variables for latex/beamer/html/ms
-    -   slide shows
-    -   or scrap it all for link to offical users's guide?
-
 -   Pandoc contribution: insert reference to defaults file settings into MANUAL.txt
 
 ***
