@@ -1,7 +1,7 @@
 {
   "name": "pandoc-pdf",
   "main": "./lib/pandoc-pdf",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Use Pandoc to create a PDF from an Atom editor pane, and view it in another pane.",
   "keywords": [
     "Pandoc",
