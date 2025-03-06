@@ -1,6 +1,6 @@
 > [!IMPORTANT]
 > I have stopped using this package myself (replaced by Quarto), and it will not be developed any further, including adaptation to Pulsar.
-> If someone is interested to take over the project, please contact me, e.g. through an issue.
+> If someone is interested to take over the project, please let me know.
 
 
 # Pandoc/PDF
