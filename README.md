@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> I have stopped using this package myself (replaced by Quarto), and it will not be developed any further, including adaptation to Pulsar.
+> If someone is interested to take over the project, please contact me, e.g. through an issue.
+
+
 # Pandoc/PDF
 
 Pandoc/PDF is a package for the [Atom editor](https://atom.io/) that makes it possible to use [Pandoc](https://pandoc.org/) directly from an editor pane to create a PDF, and to view that PDF in another Atom pane.
